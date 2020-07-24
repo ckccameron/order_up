@@ -14,6 +14,7 @@ RSpec.describe "dishes show page" do
     DishIngredient.create(dish: @spaghetti, ingredient: @sauce)
     DishIngredient.create(dish: @spaghetti, ingredient: @sausage)
   end
+
   it "displays a list of ingredients and the chef name for a dish" do
     visit "/dish/#{@spaghetti.id}"
 
